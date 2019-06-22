@@ -175,7 +175,7 @@ header .navbar-dark .navbar-nav .nav-link:hover, .pricing:hover {
   font-weight: 100;
 }
 
-.dropdown-menu ul .provision a .product-title:hover {
+.dropdown-menu ul .product-provision a .product-title:hover {
   color: var(--white);
 }
 
@@ -1095,7 +1095,7 @@ footer {
   .container {
     max-width: 1288px;
   }
-  .dropdown-menu ul .provision,
+  .dropdown-menu ul .product-provision,
   #learn .dropdown-menu ul .learn-li,
   #company .dropdown-menu ul .about-us,
   #partners .dropdown-menu ul .ecosystem,
@@ -1117,7 +1117,7 @@ footer {
     border-top: 1px solid var(--gray-9);
   }
   
-  .dropdown-menu ul .run,
+  .dropdown-menu ul .product-run,
   #learn .dropdown-menu ul .events,
   #company .dropdown-menu ul .tao,
   #partners .dropdown-menu ul .empty-box,
