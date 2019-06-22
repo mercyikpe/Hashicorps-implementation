@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HashiCorp: IkpeJS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
+
+  <link rel='shortcut icon' type='image/x-icon' href='img/favicon.png' />
+
+  <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="hashicorp logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav py-2 d-flex ">
+
+            <li class="nav-item dropdown" id="products">
+              <a class="nav-link text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Products<i class="arrow-down"></i></a>
+
+              <div class="dropdown-menu p-0 border-0"
+                style="margin: -1.5% 0 0 10%; box-shadow: 0 5px 25px rgba(0,0,0,.15); border-radius: 3px;"
+                aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-7 m-0 p-0 products">
+                      <ul class="nav">
+
+                        <li class="col-6 text-center m-0 p-0 provision">
+                          <a href="" class="content">
+                            <div class="">
+                              <span class="product-title">PROVISION</span>
+                              <div class="product-item">
+                                <img class="black-icon"
+                                  src="https://www.datocms-assets.com/2885/1509990125-terraform-dark.svg"
+                                  alt="Terraform Icon">
+                                <img class="white-icon"
+                                  src="https://www.datocms-assets.com/2885/1507928756-terraform.svg"
+                                  alt="Terraform Icon">
+                                <span class="product-title">Terraform</span>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 secure ">
+                          <a href="" class="content">
+                            <div class="">
+                              <span class="product-title">SECURE</span>
+                              <div class="product-item">
+                                <img class="black-icon"
+                                  src="https://www.datocms-assets.com/2885/1509990185-vault-dark.svg"
+                                  alt="Terraform Icon">
+                                <img class="white-icon" src="https://www.datocms-assets.com/2885/1507928972-vault.svg"
+                                  alt="Terraform Icon">
+                                <span class="product-title">Vault</span>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="col-6 text-center m-0 p-0 connect">
+                          <a href="" class="content">
+                            <div class="">
+                              <span class="product-title">CONNECT</span>
+                              <div class="product-item">
+                                <img class="black-icon"
+                                  src="https://www.datocms-assets.com/2885/1509990169-consul-dark.svg"
+                                  alt="Terraform Icon">
+                                <img class="white-icon" src="https://www.datocms-assets.com/2885/1507928925-consul.svg"
+                                  alt="Terraform Icon">
+                                <span class="product-title">Consul</span>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="col-6 text-center m-0 p-0 run">
+                          <a href="" class="content">
+                            <div class="">
+                              <span class="product-title">RUN</span>
+                              <div class="product-item">
+                                <img class="black-icon"
+                                  src="https://www.datocms-assets.com/2885/1509990146-nomad-dark.svg"
+                                  alt="Terraform Icon">
+                                <img class="white-icon" src="https://www.datocms-assets.com/2885/1509989810-nomad.svg"
+                                  alt="Terraform Icon">
+                                <span class="product-title">Nomad</span>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- right-menu  -->
+                    <div class="col-md-5 m-0 p-0">
+                      <div class="bg-no-overlay">
+                        <h2 class="promo-text">Unlocking the Cloud Operating Model</h2>
+                        <p>A whitepaper on achieving the fastest path to value in a modern, multi-cloud datacenter.</p>
+                        <a href="#" class="btn btn-outline-light">Read White Paper</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="nav-item dropdown" id="learn">
+              <a class="nav-link text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Learn<i class="arrow-down"></i></a>
+
+              <div class="dropdown-menu p-0 border-0"
+                style="margin: -1.5% 0 0 10%; box-shadow: 0 5px 25px rgba(0,0,0,.15); border-radius: 3px;"
+                aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-7 m-0 p-0 learn">
+                      <ul class="nav">
+
+                        <li class="col-6 text-center m-0 p-0 learn-li">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black-icon"
+                                src="https://www.datocms-assets.com/2885/1508285390-whitepaper-icon.svg">
+                              <img class="white-icon"
+                                src="https://www.datocms-assets.com/2885/1508285437-whitepaper-icon-white.svg"
+                                alt="Paper Icon">
+                              <span class="learn-item">Learn</span>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 resources">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black-icon"
+                                src="https://www.datocms-assets.com/2885/1509143301-library-icon.svg">
+                              <img class="white-icon"
+                                src="https://www.datocms-assets.com/2885/1509143311-library-icon-white.svg">
+                              <span class="learn-item">Resources</span>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 blog">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black-icon" src="https://www.datocms-assets.com/2885/1508358315-blog-icon.svg"
+                                alt="Blog Icon">
+                              <img class="white-icon"
+                                src="https://www.datocms-assets.com/2885/1508358329-blog-icon-white.svg"
+                                alt="Blog Icon">
+                              <span class="learn-item">Blog</span>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 cloud-operating-model">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black-icon"
+                                src="https://www.datocms-assets.com/2885/1508285429-whitepaper-icon.svg"
+                                alt="Paper Icon">
+                              <img class="white-icon"
+                                src="https://www.datocms-assets.com/2885/1508285437-whitepaper-icon-white.svg"
+                                alt="Paper Icon">
+                              <span class="learn-item">Cloud Operating Model</span>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 training">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black-icon"
+                                src="https://www.datocms-assets.com/2885/1508349360-training-icon.svg" alt="Chart Icon">
+                              <img class="white-icon"
+                                src="https://www.datocms-assets.com/2885/1508349368-training-icon-white.svg"
+                                alt="Chart Icon">
+                              <span class="learn-item">Training</span>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 events">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black-icon"
+                                src="https://www.datocms-assets.com/2885/1508349383-calendar-icon.svg"
+                                alt="Calendar Icon">
+                              <img class="white-icon"
+                                src="https://www.datocms-assets.com/2885/1507141809-events-light.svg"
+                                alt="Calendar Icon">
+                              <span class="learn-item">Events</span>
+                            </div>
+                          </a>
+                        </li>
+
+                      </ul>
+
+                    </div>
+
+                    <!-- right-menu  -->
+                    <div class="col-md-5 m-0 p-0">
+                      <div class="bg-no-overlay">
+                        <h2 class="promo-text">Layer 7 Observability with Consul Service Mesh</h2>
+                        <p>Register for our live webinar as we provide an overview of and demo Consul's new Layer 7
+                          observability features.</p>
+                        <a href="#" class="btn btn-outline-light">Register Now</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="nav-item dropdown" id="company">
+              <a class="nav-link text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Company<i class="arrow-down"></i></a>
+
+              <div class="dropdown-menu p-0 border-0"
+                style="margin: -1.5% 0 0 10%; box-shadow: 0 5px 25px rgba(0,0,0,.15); border-radius: 3px;"
+                aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-7 m-0 p-0 company">
+                      <ul class="nav">
+
+                        <li class="col-6 text-center m-0 p-0 about-us">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black-icon"
+                                src="https://www.datocms-assets.com/2885/1508349454-about-icon.svg" alt="About Icon">
+                              <img class="white-icon"
+                                src="https://www.datocms-assets.com/2885/1508349460-about-icon-white.svg"
+                                alt="About Icon">
+                              <span class="company-item">About Us</span>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 contact">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black-icon"
+                                src="https://www.datocms-assets.com/2885/1508349541-contact-icon.svg" alt="Email Icon">
+                              <img class="white-icon"
+                                src="https://www.datocms-assets.com/2885/1508349548-contact-icon-white.svg"
+                                alt="Email Icon">
+                              <span class="company-item">Contact</span>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 jobs">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black-icon" src="https://www.datocms-assets.com/2885/1508349471-jobs-icon.svg"
+                                alt="Toolbox Icon">
+                              <img class="white-icon"
+                                src="https://www.datocms-assets.com/2885/1508349478-jobs-icon-white.svg"
+                                alt="Toolbox Icon">
+                              <span class="company-item">Jobs</span>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 principles">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black-icon"
+                                src="https://www.datocms-assets.com/2885/1524789229-culture-icon.svg">
+                              <img class="white-icon"
+                                src="https://www.datocms-assets.com/2885/1524789233-culture-icon-white.svg">
+                              <span class="company-item">Our Principles</span>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 press">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black-icon"
+                                src="https://www.datocms-assets.com/2885/1508349493-press-icon.svg"
+                                alt="Newspaper Icon">
+                              <img class="white-icon"
+                                src="https://www.datocms-assets.com/2885/1508349501-press-icon-white.svg"
+                                alt="Newspaper Icon">
+                              <span class="company-item">Press</span></div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 tao">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black-icon" src="https://www.datocms-assets.com/2885/1508349523-tao-icon.svg"
+                                alt="Compass Icon">
+                              <img class="white-icon"
+                                src="https://www.datocms-assets.com/2885/1508349530-tao-icon-white.svg"
+                                alt="Compass Icon">
+                              <span class="company-item">Tao of HashiCorp</span></div>
+                          </a>
+                        </li>
+
+                      </ul>
+
+                    </div>
+
+                    <!-- right-menu  -->
+                    <div class="col-md-5 m-0 p-0">
+                      <div class="bg-no-overlay">
+                        <h2 class="promo-text">HashiConf in Seattle, WA</h2>
+                        <p>Experience 50+ sessions, 12 in-depth trainings, product releases, and access to HashiCorp
+                          experts. Sept 9, 10 and 11.</p>
+                        <a href="#" class="btn btn-outline-light">Get Tickets</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="nav-item dropdown" id="partners">
+              <a class="nav-link text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Partners<i class="arrow-down"></i></a>
+
+              <div class="dropdown-menu p-0 border-0"
+                style="margin: -1.5% 0 0 10%; box-shadow: 0 5px 25px rgba(0,0,0,.15); border-radius: 3px;"
+                aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-7 m-0 p-0 partners">
+                      <ul class="nav">
+
+                        <li class="col-6 text-center m-0 p-0 ecosystem">
+                          <a href="" class="content">
+                            <div class="">
+                              <span class="partners-title"></span>
+                              <div class="py-3">
+                                <img class="black-icon"
+                                  src="https://www.datocms-assets.com/2885/1513613315-partners-network-overview.svg">
+                                <img class="white-icon"
+                                  src="https://www.datocms-assets.com/2885/1513613293-partners-network-overview.svg">
+                                <span class="partners-item">Ecosystem</span>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 product-integrations">
+                          <a href="" class="content">
+                            <div class="">
+                              <span class="partners-title"></span>
+                              <div class="py-3">
+                                <img class="black-icon"
+                                  src="https://www.datocms-assets.com/2885/1556658119-layers-dark.svg">
+                                <img class="white-icon" src="https://www.datocms-assets.com/2885/1556658132-layers.svg">
+                                <span class="partners-item">Product Integrations</span>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 find-a-partner">
+                          <a href="" class="content">
+                            <div class="">
+                              <span class="partners-title"></span>
+                              <div class="py-3">
+                                <img class="black-icon"
+                                  src="https://www.datocms-assets.com/2885/1513614481-become-a-partner.svg">
+                                <img class="white-icon"
+                                  src="https://www.datocms-assets.com/2885/1513614459-become-a-partner.svg">
+                                <span class="partners-item">Find a Partner</span>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 empty-box">
+
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- right-menu  -->
+                    <div class="col-md-5 m-0 p-0">
+                      <div class="bg-no-overlay">
+                        <h2 class="promo-text">Modernizing Applications with Microsoft and Consul</h2>
+                        <p>Join us for a joint webinar with Microsoft as we explore the challenges of migrating
+                          applications to cloud environments.</p>
+                        <a href="#" class="btn btn-outline-light">Register Now</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="nav-item dropdown" id="docs">
+              <a class="nav-link text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Docs<i class="arrow-down"></i></a>
+
+              <div class="dropdown-menu p-0 border-0"
+                style="margin: -1.5% 0 0 10%; box-shadow: 0 5px 25px rgba(0,0,0,.15); border-radius: 3px;"
+                aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-7 m-0 p-0 docs">
+                      <ul class="nav">
+
+                        <li class="col-6 text-center m-0 p-0 terraform">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black-Icon"
+                                src="https://www.datocms-assets.com/2885/1503444324-terraform-logo.svg"
+                                alt="Terraform Logo">
+                              <img class="white-icon" src="https://www.datocms-assets.com/2885/1509992372-terraform.svg"
+                                alt="Terraform Logo">
+                              <span class="docs-item">Terraform</span>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 vault">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black" src="https://www.datocms-assets.com/2885/1503444340-vault-logo.svg"
+                                alt="Vault Logo">
+                              <img class="white" src="https://www.datocms-assets.com/2885/1509992415-vault.svg"
+                                alt="Vault Logo">
+                              <span class="docs-item">Vault</span>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 consul">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black" src="https://www.datocms-assets.com/2885/1503444354-consul-logo.svg"
+                                alt="Consul Logo">
+                              <img class="white" src="https://www.datocms-assets.com/2885/1509992454-consul.svg"
+                                alt="Consul Logo">
+                              <span class="docs-item">Consul</span>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 nomad">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black" src="https://www.datocms-assets.com/2885/1503444365-nomad-logo.svg"
+                                alt="Nomad Logo">
+                              <img class="white" src="https://www.datocms-assets.com/2885/1509992476-nomad.svg"
+                                alt="Nomad Logo">
+                              <span class="docs-item">Nomad</span></div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 vagrant">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black" src="https://www.datocms-assets.com/2885/1503444296-vagrant.svg"
+                                alt="Vagrant Logo">
+                              <img class="white" src="https://www.datocms-assets.com/2885/1509992607-vagrant-light.svg"
+                                alt="Vagrant Logo">
+                              <span class="docs-item">Vagrant</span></div>
+                          </a>
+                        </li>
+
+                        <li class="col-6 text-center m-0 p-0 packer">
+                          <a href="" class="content">
+                            <div class="">
+                              <img class="black" src="https://www.datocms-assets.com/2885/1507930262-packer.svg"
+                                alt="Packer Logo">
+                              <img class="white" src="https://www.datocms-assets.com/2885/1509992633-packer-light.svg"
+                                alt="Packer Logo">
+                              <span class="docs-item">Packer</span>
+                            </div>
+                          </a>
+                        </li>
+
+                      </ul>
+
+                    </div>
+
+                    <!-- right-menu  -->
+                    <div class="col-md-5 m-0 p-0">
+                      <div class="bg-no-overlay">
+                        <h2 class="promo-text">New Learn Platform</h2>
+                        <p>Announcing the HashiCorp Learn Platform.</p>
+                        <a href="#" class="btn btn-outline-light">Get Started</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="nav-item support" id="support">
+              <a class="nav-link text-white" href="#">Support</a>
+            </li>
+          </ul>
+
+          <ul class="my-2 my-lg-0 pricing list-unstyled ml-5">
+            <li class="nav-item support" id="pricing">
+              <a class="nav-link text-white" href="#">Get Pricing<i class="arrow-right"></i></a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <section id="cloud-area">
+    <div class="container py-5">
+      <div class="row cloud-area-row">
+
+        <div class="col-md-6 col-sm-12 cloud-text py-5">
+          <div class="header-align">
+            <span class="whitepaper">WHITEPAPER</span>
+            <a href="https://www.hashicorp.com/cloud-operating-model" class="cloud-text-link">
+              <p class="mr-2 text-white m-0 py-4">Unlocking the Cloud Operating Model</p>
+              <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0.5" y1="4.5" x2="13.5" y2="4.5" stroke="#1563FF" stroke-linecap="round"></line>
+                <path
+                  d="M10.3536 0.646447C10.1583 0.451184 9.84171 0.451184 9.64645 0.646447C9.45118 0.841709 9.45118 1.15829 9.64645 1.35355L10.3536 0.646447ZM13.5 4.5L13.8536 4.85355L14.2071 4.5L13.8536 4.14645L13.5 4.5ZM9.64645 7.64645C9.45118 7.84171 9.45118 8.15829 9.64645 8.35355C9.84171 8.54882 10.1583 8.54882 10.3536 8.35355L9.64645 7.64645ZM9.64645 1.35355L13.1464 4.85355L13.8536 4.14645L10.3536 0.646447L9.64645 1.35355ZM13.1464 4.14645L9.64645 7.64645L10.3536 8.35355L13.8536 4.85355L13.1464 4.14645Z"
+                  fill="#1563FF"></path>
+              </svg>
+            </a>
+            
+          </div>
+
+          <h1 class="my-4 text-white header-align">Cloud Infrastructure Automation</h1>
+
+          <h3 class="text-white header-align">Consistent workflows to
+            <a href="#" class="cloud-provision text-white">provision</a>,
+            <a href="#" class="cloud-secure text-white">secure</a>,
+            <a href="#" class="cloud-connect text-white">connect</a>, and
+            <a href="#" class="cloud-run text-white">run</a> any infrastructure for any application.</h3>
+
+
+          <div class="content pt-5">
+            <div class="input-group form">
+              <input type="email" class="form-control" placeholder="Enter work email">
+              <span class="input-group-btn ">
+                <button class="btn" type="submit">Request a demo</button>
+              </span>
+            </div>
+          </div>
+
+
+          <div class="help-text">
+            <div>
+              <p><a href="#" class="cloud-question">Questions? Talk to a customer representative.</a></p>
+            </div>
+
+            <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg"
+              style="margin-top: 45px; margin-left: 5px;">
+              <line x1="0.5" y1="4.5" x2="13.5" y2="4.5" stroke="#1563FF" stroke-linecap="round"></line>
+              <path
+                d="M10.3536 0.646447C10.1583 0.451184 9.84171 0.451184 9.64645 0.646447C9.45118 0.841709 9.45118 1.15829 9.64645 1.35355L10.3536 0.646447ZM13.5 4.5L13.8536 4.85355L14.2071 4.5L13.8536 4.14645L13.5 4.5ZM9.64645 7.64645C9.45118 7.84171 9.45118 8.15829 9.64645 8.35355C9.84171 8.54882 10.1583 8.54882 10.3536 8.35355L9.64645 7.64645ZM9.64645 1.35355L13.1464 4.85355L13.8536 4.14645L10.3536 0.646447L9.64645 1.35355ZM13.1464 4.14645L9.64645 7.64645L10.3536 8.35355L13.8536 4.85355L13.1464 4.14645Z"
+                fill="#1563FF"></path>
+            </svg>
+
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 image">
+          <picture class="cloud-image" style="max-width: 720px; width: 100%;">
+            <source type="image/webp"
+              srcset="https://www.datocms-assets.com/2885/1551813966-stackdarkbgopaque.png?fit=max&amp;fm=webp&amp;q=80&amp;w=250 250w,https://www.datocms-assets.com/2885/1551813966-stackdarkbgopaque.png?fit=max&amp;fm=webp&amp;q=80&amp;w=500 500w,https://www.datocms-assets.com/2885/1551813966-stackdarkbgopaque.png?fit=max&amp;fm=webp&amp;q=80&amp;w=750 750w,https://www.datocms-assets.com/2885/1551813966-stackdarkbgopaque.png?fit=max&amp;fm=webp&amp;q=80&amp;w=1000 1000w,https://www.datocms-assets.com/2885/1551813966-stackdarkbgopaque.png?fit=max&amp;fm=webp&amp;q=80&amp;w=1500 1500w,https://www.datocms-assets.com/2885/1551813966-stackdarkbgopaque.png?fit=max&amp;fm=webp&amp;q=80&amp;w=2000 2000w,https://www.datocms-assets.com/2885/1551813966-stackdarkbgopaque.png?fit=max&amp;fm=webp&amp;q=80&amp;w=2500 2500w"
+              sizes="100vw"><img
+              src="https://www.datocms-assets.com/2885/1551813966-stackdarkbgopaque.png?fit=max&amp;fm=png&amp;q=80"
+              srcset="https://www.datocms-assets.com/2885/1551813966-stackdarkbgopaque.png?fit=max&amp;fm=png&amp;q=80&amp;w=250 250w,https://www.datocms-assets.com/2885/1551813966-stackdarkbgopaque.png?fit=max&amp;fm=png&amp;q=80&amp;w=500 500w,https://www.datocms-assets.com/2885/1551813966-stackdarkbgopaque.png?fit=max&amp;fm=png&amp;q=80&amp;w=750 750w,https://www.datocms-assets.com/2885/1551813966-stackdarkbgopaque.png?fit=max&amp;fm=png&amp;q=80&amp;w=1000 1000w,https://www.datocms-assets.com/2885/1551813966-stackdarkbgopaque.png?fit=max&amp;fm=png&amp;q=80&amp;w=1500 1500w,https://www.datocms-assets.com/2885/1551813966-stackdarkbgopaque.png?fit=max&amp;fm=png&amp;q=80&amp;w=2000 2000w,https://www.datocms-assets.com/2885/1551813966-stackdarkbgopaque.png?fit=max&amp;fm=png&amp;q=80&amp;w=2500 2500w"
+              sizes="100vw"></picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="multi-cloud-challenge" class="py-5">
+
+    <img src="https://www.datocms-assets.com/2885/1507304058-multi-cloud-illustration.svg"
+      alt="Multi Cloud Illustration">
+
+    <div class="container">
+      <div class="row d-flex justify-content-center py-5 text-white">
+        <div class="col-8 text-center challenge">
+          <h2>The challenge <span class="darken">of going multi-cloud</span></h2>
+          <h3>The shift from <strong>static and consolidated</strong> to <strong>dynamic and distributed</strong>
+            infrastructure introduces challenges for the key people that manage infrastructure:</h3>
+        </div>
+      </div>
+
+      <div class="row text-center row-text py-5 text-white">
+        <div class="col-md-4 col-sm-12">
+          <div class="callout-text">
+            <h3>Operations</h3>
+            <div class="callout-description">
+              <p>The challenge for operations teams moving to cloud is to enable the automation through infrastructure
+                as code while embracing the inevitable heterogeneity of different cloud providers.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="callout-text">
+            <h3>Security</h3>
+            <div class="callout-description">
+              <p>The challenge for security professionals is to rethink the 'castle &amp; moat' approach to
+                perimeter-based security and reconsider security holistically across the dynamic, distributed fleet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="callout-text">
+            <h3>Architects &amp; developers</h3>
+            <div class="callout-description">
+              <p>The challenge for architects and developers is to accommodate the necessary diversity of application
+                platforms across a distributed fleet.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="border-with-image text-center">
+  </div>
+
+
+  <section id="multi-cloud-adoption">
+    <div class="container py-5">
+      <div class="row d-flex justify-content-center py-5 text-white">
+        <div class="col-8 text-center">
+          <h2>
+            <p>Your blueprint <span class="darken">for multi–cloud adoption</span></p>
+          </h2>
+          <h3 class="lighter">
+            <p>How to enable operators, security, and developers to navigate the transition to cloud infrastructure.</p>
+          </h3>
+        </div>
+      </div>
+  
+  
+      
+      <div class="tabs" id="blueprint-anchor">
+        
+        <ul class="nav nav-fill my-5">
+          <li class="nav-item">
+            <a class="nav-link active" id="provision"><span class="border-text-provision">Provision</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="secure"><span class="border-text-secure">Secure</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="run"><span class="border-text-run">Run</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="connect"><span class="border-text-connect">Connect</span></a>
+          </li>
+        </ul>
+  
+  
+        <div class="row">
+          <div class="col-sm-6">
+            
+            <div class="row">
+              <div class="col-sm-6">
+                
+                <div class="col-12">
+                  <img class="consul consul-img"  src="https://www.datocms-assets.com/2885/1507316751-consul-badge.svg" alt="consul badge" >
+                </div>
+  
+                <div class="col-12">
+                  <img class="nomad nomad-img"  src="https://www.datocms-assets.com/2885/1507319958-nomad-badge.svg" alt="nomad badge">
+                </div>
+  
+                <div class="col-12">
+                  <img class="vault vault-img" src="https://www.datocms-assets.com/2885/1507319994-vault-badge.svg" alt="vault badge">
+                </div>
+  
+                <div class="col-12">
+                  <img class="terraform active terraform-img" src="https://www.datocms-assets.com/2885/1507320034-terraform-badge.svg" alt="terraform badge">
+                </div>
+                
+              </div>
+              
+              <div class="col-sm-6 other2">
+
+                  <div class="col-12">
+                      <img  class="consul-img base-4" src="https://d33wubrfki0l68.cloudfront.net/e79a0638b3584f43d1003b75d0f0c83557e04482/66a79/img/stack-graphic/top-layer.svg" alt="square stack layer">
+                    </div>
+
+
+                    <div class="col-12 other2-2">
+                        <img class="nomad-img base-3" src="https://d33wubrfki0l68.cloudfront.net/77d112de7dc8c1def16f1035864d186cce48e7c9/0d6ad/img/stack-graphic/nomad-layer.svg" alt="square stack layer">
+                      </div>
+
+
+                      <div class="col-12 other2-2">
+                          <img class="vault-img base-2" src="https://d33wubrfki0l68.cloudfront.net/c472d309619d3cd5b09eac833f0c1f2bae4ee8ae/76942/img/stack-graphic/vault-layer.svg" alt="square stack layer" >
+                        </div>
+               
+                <div class="col-12 other2-2">
+                  <img class="active terraform-img base-1" src="https://d33wubrfki0l68.cloudfront.net/877dbdae1b73edc342ea72b345f3c054671568f0/c593b/img/stack-graphic/terraform-layer.svg" alt="square stack layer">
+                </div>
+
+                
+                <div class="col-12 other2-2">
+                  <img class="base" src="https://d33wubrfki0l68.cloudfront.net/552fc7042dc73981aeb3ffdc397c51a9d2b75a4d/8bdd1/img/stack-graphic/base.svg" alt="square stack layer">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+          <div class="col-sm-6 other">
+            <li class="terraform tab provision">
+              <div class="headline">Provision</div>
+              <h5>Provision infrastructure</h5>
+              <p>For provisioning, IT ops needs to provide some constraints while maintaining the benefits of self-service.</p>
+              <ul>
+                <li>
+                  <svg width="23" height="22" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.293 1.298L11 11.591 8.707 9.298a.999.999 0 1 0-1.414 1.414l3 3a.997.997 0 0 0 1.414 0l11-11a.999.999 0 1 0-1.414-1.414"></path>
+                      <path d="M22 10.075v.93a10.925 10.925 0 0 1-3.227 7.777A10.926 10.926 0 0 1 11 22h-.007C4.929 21.996-.003 17.058 0 10.993a10.927 10.927 0 0 1 3.226-7.776A10.927 10.927 0 0 1 10.999 0h.008c1.551 0 3.055.32 4.47.952a1 1 0 1 1-.815 1.826A8.926 8.926 0 0 0 11.006 2H11a8.938 8.938 0 0 0-6.36 2.632A8.938 8.938 0 0 0 2 10.994c-.003 4.963 4.032 9.003 8.995 9.006H11c2.401 0 4.66-.935 6.36-2.633A8.936 8.936 0 0 0 20 11.005v-.93a1 1 0 1 1 2 0"></path>
+                    </g>
+                  </svg>
+                  Embrace infrastructure as code
+                  <div class="question-mark g-tooltip" data-tippy-content="Using infrastructure as code provides a way to provision infrastructure at scale and provide infrastructure templates that can be reused by other teams." tabindex="0">
+                    <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                      <title>Group 13</title>
+                        <path d="M9 18A9 9 0 1 1 9 0a9 9 0 0 1 0 18zm0-1A8 8 0 1 0 9 1a8 8 0 0 0 0 16z"></path>
+                        <path d="M8.19 10.898v-.375c0-.43.078-.787.234-1.072.156-.285.43-.58.82-.885.465-.367.765-.652.9-.855a1.29 1.29 0 0 0 .202-.727c0-.328-.11-.58-.328-.755-.22-.176-.534-.264-.944-.264-.37 0-.715.053-1.031.158a7.32 7.32 0 0 0-.926.38l-.492-1.03a5.158 5.158 0 0 1 2.549-.662c.765 0 1.373.187 1.822.562.45.375.674.893.674 1.553 0 .293-.043.553-.129.782a2.245 2.245 0 0 1-.39.653c-.173.207-.473.477-.899.809-.363.285-.606.521-.73.709-.123.187-.184.44-.184.756v.263H8.189zm-.24 1.87c0-.59.286-.885.86-.885.282 0 .497.077.645.231.149.155.223.372.223.654 0 .277-.075.497-.226.659-.15.162-.364.243-.641.243-.278 0-.49-.08-.64-.237-.148-.159-.222-.38-.222-.665z"></path>
+                      </g>
+                    </svg>
+        
+                  </div>
+                </li>
+                <li>
+                  <svg width="23" height="22" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.293 1.298L11 11.591 8.707 9.298a.999.999 0 1 0-1.414 1.414l3 3a.997.997 0 0 0 1.414 0l11-11a.999.999 0 1 0-1.414-1.414"></path>
+                      <path d="M22 10.075v.93a10.925 10.925 0 0 1-3.227 7.777A10.926 10.926 0 0 1 11 22h-.007C4.929 21.996-.003 17.058 0 10.993a10.927 10.927 0 0 1 3.226-7.776A10.927 10.927 0 0 1 10.999 0h.008c1.551 0 3.055.32 4.47.952a1 1 0 1 1-.815 1.826A8.926 8.926 0 0 0 11.006 2H11a8.938 8.938 0 0 0-6.36 2.632A8.938 8.938 0 0 0 2 10.994c-.003 4.963 4.032 9.003 8.995 9.006H11c2.401 0 4.66-.935 6.36-2.633A8.936 8.936 0 0 0 20 11.005v-.93a1 1 0 1 1 2 0"></path>
+                    </g>
+                  </svg>
+                  Manage heterogeneity
+                  <div class="question-mark g-tooltip" data-tippy-content="Provide operators with a consistent workflow to provision infrastructure regardless of cloud providers and without losing access to the full capabilities of each cloud. This eliminates the need to learn cloud-specific provisioning tools." tabindex="0">
+                    <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                      <title>Group 13</title>
+                        <path d="M9 18A9 9 0 1 1 9 0a9 9 0 0 1 0 18zm0-1A8 8 0 1 0 9 1a8 8 0 0 0 0 16z"></path>
+                        <path d="M8.19 10.898v-.375c0-.43.078-.787.234-1.072.156-.285.43-.58.82-.885.465-.367.765-.652.9-.855a1.29 1.29 0 0 0 .202-.727c0-.328-.11-.58-.328-.755-.22-.176-.534-.264-.944-.264-.37 0-.715.053-1.031.158a7.32 7.32 0 0 0-.926.38l-.492-1.03a5.158 5.158 0 0 1 2.549-.662c.765 0 1.373.187 1.822.562.45.375.674.893.674 1.553 0 .293-.043.553-.129.782a2.245 2.245 0 0 1-.39.653c-.173.207-.473.477-.899.809-.363.285-.606.521-.73.709-.123.187-.184.44-.184.756v.263H8.189zm-.24 1.87c0-.59.286-.885.86-.885.282 0 .497.077.645.231.149.155.223.372.223.654 0 .277-.075.497-.226.659-.15.162-.364.243-.641.243-.278 0-.49-.08-.64-.237-.148-.159-.222-.38-.222-.665z"></path>
+                      </g>
+                    </svg>
+        
+                  </div>
+                </li>
+                <li>
+                  <svg width="23" height="22" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.293 1.298L11 11.591 8.707 9.298a.999.999 0 1 0-1.414 1.414l3 3a.997.997 0 0 0 1.414 0l11-11a.999.999 0 1 0-1.414-1.414"></path>
+                      <path d="M22 10.075v.93a10.925 10.925 0 0 1-3.227 7.777A10.926 10.926 0 0 1 11 22h-.007C4.929 21.996-.003 17.058 0 10.993a10.927 10.927 0 0 1 3.226-7.776A10.927 10.927 0 0 1 10.999 0h.008c1.551 0 3.055.32 4.47.952a1 1 0 1 1-.815 1.826A8.926 8.926 0 0 0 11.006 2H11a8.938 8.938 0 0 0-6.36 2.632A8.938 8.938 0 0 0 2 10.994c-.003 4.963 4.032 9.003 8.995 9.006H11c2.401 0 4.66-.935 6.36-2.633A8.936 8.936 0 0 0 20 11.005v-.93a1 1 0 1 1 2 0"></path>
+                    </g>
+                  </svg>
+                  Incorporate dependencies
+                  <div class="question-mark g-tooltip" data-tippy-content="Infrastructure blueprints include many dependencies to elements that are not available natively as cloud services – such as CDN or monitoring tools that must be incorporated in every image. The ability to incorporate these in the provisioning process is a prerequisite for most provisioning approaches." tabindex="0">
+                    <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                      <title>Group 13</title>
+                        <path d="M9 18A9 9 0 1 1 9 0a9 9 0 0 1 0 18zm0-1A8 8 0 1 0 9 1a8 8 0 0 0 0 16z"></path>
+                        <path d="M8.19 10.898v-.375c0-.43.078-.787.234-1.072.156-.285.43-.58.82-.885.465-.367.765-.652.9-.855a1.29 1.29 0 0 0 .202-.727c0-.328-.11-.58-.328-.755-.22-.176-.534-.264-.944-.264-.37 0-.715.053-1.031.158a7.32 7.32 0 0 0-.926.38l-.492-1.03a5.158 5.158 0 0 1 2.549-.662c.765 0 1.373.187 1.822.562.45.375.674.893.674 1.553 0 .293-.043.553-.129.782a2.245 2.245 0 0 1-.39.653c-.173.207-.473.477-.899.809-.363.285-.606.521-.73.709-.123.187-.184.44-.184.756v.263H8.189zm-.24 1.87c0-.59.286-.885.86-.885.282 0 .497.077.645.231.149.155.223.372.223.654 0 .277-.075.497-.226.659-.15.162-.364.243-.641.243-.278 0-.49-.08-.64-.237-.148-.159-.222-.38-.222-.665z"></path>
+                      </g>
+                    </svg>
+        
+                  </div>
+                </li>
+              </ul>
+              <a class="btn" href="#">Provision with Terraform<span>›</span></a>
+            </li>
+            <li class="vault tab secure">
+              <div class="headline">Secure</div>
+              <h5>Secure applications &amp; infrastructure</h5>
+              <p>Rather than attempting to recreate the traditional 'castle &amp; moat' approach, security professionals should focus on addressing the following core requirements:</p>
+              <ul>
+                <li>
+                  <svg width="23" height="22" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#D8D8D8" fill-rule="evenodd">
+                      <path d="M21.293 1.298L11 11.591 8.707 9.298a.999.999 0 1 0-1.414 1.414l3 3a.997.997 0 0 0 1.414 0l11-11a.999.999 0 1 0-1.414-1.414"></path>
+                      <path d="M22 10.075v.93a10.925 10.925 0 0 1-3.227 7.777A10.926 10.926 0 0 1 11 22h-.007C4.929 21.996-.003 17.058 0 10.993a10.927 10.927 0 0 1 3.226-7.776A10.927 10.927 0 0 1 10.999 0h.008c1.551 0 3.055.32 4.47.952a1 1 0 1 1-.815 1.826A8.926 8.926 0 0 0 11.006 2H11a8.938 8.938 0 0 0-6.36 2.632A8.938 8.938 0 0 0 2 10.994c-.003 4.963 4.032 9.003 8.995 9.006H11c2.401 0 4.66-.935 6.36-2.633A8.936 8.936 0 0 0 20 11.005v-.93a1 1 0 1 1 2 0"></path>
+                    </g>
+                  </svg>
+                  Distributed secrets management
+                  <div class="question-mark tooltip" data-tippy-content="Application-specific secrets such as database usernames and passwords can become exposed given the lack of network perimeter. Providing a mechanism for ops and development teams to manage and rotate distributed secrets is a much larger issue in this environment and paramount." tabindex="0">
+                    <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                      <title>Group 13</title>
+                      <g fill="#B4B8BC" fill-rule="evenodd" opacity=".7">
+                        <path d="M9 18A9 9 0 1 1 9 0a9 9 0 0 1 0 18zm0-1A8 8 0 1 0 9 1a8 8 0 0 0 0 16z"></path>
+                        <path d="M8.19 10.898v-.375c0-.43.078-.787.234-1.072.156-.285.43-.58.82-.885.465-.367.765-.652.9-.855a1.29 1.29 0 0 0 .202-.727c0-.328-.11-.58-.328-.755-.22-.176-.534-.264-.944-.264-.37 0-.715.053-1.031.158a7.32 7.32 0 0 0-.926.38l-.492-1.03a5.158 5.158 0 0 1 2.549-.662c.765 0 1.373.187 1.822.562.45.375.674.893.674 1.553 0 .293-.043.553-.129.782a2.245 2.245 0 0 1-.39.653c-.173.207-.473.477-.899.809-.363.285-.606.521-.73.709-.123.187-.184.44-.184.756v.263H8.189zm-.24 1.87c0-.59.286-.885.86-.885.282 0 .497.077.645.231.149.155.223.372.223.654 0 .277-.075.497-.226.659-.15.162-.364.243-.641.243-.278 0-.49-.08-.64-.237-.148-.159-.222-.38-.222-.665z"></path>
+                      </g>
+                    </svg>
+        
+                  </div>
+                </li>
+                <li>
+                  <svg width="23" height="22" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#D8D8D8" fill-rule="evenodd">
+                      <path d="M21.293 1.298L11 11.591 8.707 9.298a.999.999 0 1 0-1.414 1.414l3 3a.997.997 0 0 0 1.414 0l11-11a.999.999 0 1 0-1.414-1.414"></path>
+                      <path d="M22 10.075v.93a10.925 10.925 0 0 1-3.227 7.777A10.926 10.926 0 0 1 11 22h-.007C4.929 21.996-.003 17.058 0 10.993a10.927 10.927 0 0 1 3.226-7.776A10.927 10.927 0 0 1 10.999 0h.008c1.551 0 3.055.32 4.47.952a1 1 0 1 1-.815 1.826A8.926 8.926 0 0 0 11.006 2H11a8.938 8.938 0 0 0-6.36 2.632A8.938 8.938 0 0 0 2 10.994c-.003 4.963 4.032 9.003 8.995 9.006H11c2.401 0 4.66-.935 6.36-2.633A8.936 8.936 0 0 0 20 11.005v-.93a1 1 0 1 1 2 0"></path>
+                    </g>
+                  </svg>
+                  Encryption of data in flight and at rest
+                  <div class="question-mark tooltip" data-tippy-content="Traffic between application components that might reside on different providers and even geographies must be encrypted." tabindex="0">
+                    <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                      <title>Group 13</title>
+                      <g fill="#B4B8BC" fill-rule="evenodd" opacity=".7">
+                        <path d="M9 18A9 9 0 1 1 9 0a9 9 0 0 1 0 18zm0-1A8 8 0 1 0 9 1a8 8 0 0 0 0 16z"></path>
+                        <path d="M8.19 10.898v-.375c0-.43.078-.787.234-1.072.156-.285.43-.58.82-.885.465-.367.765-.652.9-.855a1.29 1.29 0 0 0 .202-.727c0-.328-.11-.58-.328-.755-.22-.176-.534-.264-.944-.264-.37 0-.715.053-1.031.158a7.32 7.32 0 0 0-.926.38l-.492-1.03a5.158 5.158 0 0 1 2.549-.662c.765 0 1.373.187 1.822.562.45.375.674.893.674 1.553 0 .293-.043.553-.129.782a2.245 2.245 0 0 1-.39.653c-.173.207-.473.477-.899.809-.363.285-.606.521-.73.709-.123.187-.184.44-.184.756v.263H8.189zm-.24 1.87c0-.59.286-.885.86-.885.282 0 .497.077.645.231.149.155.223.372.223.654 0 .277-.075.497-.226.659-.15.162-.364.243-.641.243-.278 0-.49-.08-.64-.237-.148-.159-.222-.38-.222-.665z"></path>
+                      </g>
+                    </svg>
+        
+                  </div>
+                </li>
+                <li>
+                  <svg width="23" height="22" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#D8D8D8" fill-rule="evenodd">
+                      <path d="M21.293 1.298L11 11.591 8.707 9.298a.999.999 0 1 0-1.414 1.414l3 3a.997.997 0 0 0 1.414 0l11-11a.999.999 0 1 0-1.414-1.414"></path>
+                      <path d="M22 10.075v.93a10.925 10.925 0 0 1-3.227 7.777A10.926 10.926 0 0 1 11 22h-.007C4.929 21.996-.003 17.058 0 10.993a10.927 10.927 0 0 1 3.226-7.776A10.927 10.927 0 0 1 10.999 0h.008c1.551 0 3.055.32 4.47.952a1 1 0 1 1-.815 1.826A8.926 8.926 0 0 0 11.006 2H11a8.938 8.938 0 0 0-6.36 2.632A8.938 8.938 0 0 0 2 10.994c-.003 4.963 4.032 9.003 8.995 9.006H11c2.401 0 4.66-.935 6.36-2.633A8.936 8.936 0 0 0 20 11.005v-.93a1 1 0 1 1 2 0"></path>
+                    </g>
+                  </svg>
+                  Identity management
+                  <div class="question-mark tooltip" data-tippy-content="Authenticating identity between application components through the use of expiring tokens, for example, that provide assurance of identity." tabindex="0">
+                    <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                      <title>Group 13</title>
+                      <g fill="#B4B8BC" fill-rule="evenodd" opacity=".7">
+                        <path d="M9 18A9 9 0 1 1 9 0a9 9 0 0 1 0 18zm0-1A8 8 0 1 0 9 1a8 8 0 0 0 0 16z"></path>
+                        <path d="M8.19 10.898v-.375c0-.43.078-.787.234-1.072.156-.285.43-.58.82-.885.465-.367.765-.652.9-.855a1.29 1.29 0 0 0 .202-.727c0-.328-.11-.58-.328-.755-.22-.176-.534-.264-.944-.264-.37 0-.715.053-1.031.158a7.32 7.32 0 0 0-.926.38l-.492-1.03a5.158 5.158 0 0 1 2.549-.662c.765 0 1.373.187 1.822.562.45.375.674.893.674 1.553 0 .293-.043.553-.129.782a2.245 2.245 0 0 1-.39.653c-.173.207-.473.477-.899.809-.363.285-.606.521-.73.709-.123.187-.184.44-.184.756v.263H8.189zm-.24 1.87c0-.59.286-.885.86-.885.282 0 .497.077.645.231.149.155.223.372.223.654 0 .277-.075.497-.226.659-.15.162-.364.243-.641.243-.278 0-.49-.08-.64-.237-.148-.159-.222-.38-.222-.665z"></path>
+                      </g>
+                    </svg>
+        
+                  </div>
+                </li>
+              </ul>
+              <a class="btn" href="/products/vault/">Secure with Vault<span>›</span></a>
+            </li>
+            <li class="nomad tab run">
+              <div class="headline">Run</div>
+              <h5>Run applications on any infrastructure</h5>
+              <p>The architectural goal when considering the realities of multi-cloud is to enable diversity of application runtimes across one or more infrastructure providers. Therefore, two of the primary requirements are:</p>
+              <ul>
+                <li>
+                  <svg width="23" height="22" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#D8D8D8" fill-rule="evenodd">
+                      <path d="M21.293 1.298L11 11.591 8.707 9.298a.999.999 0 1 0-1.414 1.414l3 3a.997.997 0 0 0 1.414 0l11-11a.999.999 0 1 0-1.414-1.414"></path>
+                      <path d="M22 10.075v.93a10.925 10.925 0 0 1-3.227 7.777A10.926 10.926 0 0 1 11 22h-.007C4.929 21.996-.003 17.058 0 10.993a10.927 10.927 0 0 1 3.226-7.776A10.927 10.927 0 0 1 10.999 0h.008c1.551 0 3.055.32 4.47.952a1 1 0 1 1-.815 1.826A8.926 8.926 0 0 0 11.006 2H11a8.938 8.938 0 0 0-6.36 2.632A8.938 8.938 0 0 0 2 10.994c-.003 4.963 4.032 9.003 8.995 9.006H11c2.401 0 4.66-.935 6.36-2.633A8.936 8.936 0 0 0 20 11.005v-.93a1 1 0 1 1 2 0"></path>
+                    </g>
+                  </svg>
+                  Separation of concerns
+                  <div class="question-mark tooltip" data-tippy-content="How to separate developers from detailed knowledge of the underlying infrastructure so that they can focus on building the application without needing to consider where that application might physically run." tabindex="0">
+                    <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                      <title>Group 13</title>
+                      <g fill="#B4B8BC" fill-rule="evenodd" opacity=".7">
+                        <path d="M9 18A9 9 0 1 1 9 0a9 9 0 0 1 0 18zm0-1A8 8 0 1 0 9 1a8 8 0 0 0 0 16z"></path>
+                        <path d="M8.19 10.898v-.375c0-.43.078-.787.234-1.072.156-.285.43-.58.82-.885.465-.367.765-.652.9-.855a1.29 1.29 0 0 0 .202-.727c0-.328-.11-.58-.328-.755-.22-.176-.534-.264-.944-.264-.37 0-.715.053-1.031.158a7.32 7.32 0 0 0-.926.38l-.492-1.03a5.158 5.158 0 0 1 2.549-.662c.765 0 1.373.187 1.822.562.45.375.674.893.674 1.553 0 .293-.043.553-.129.782a2.245 2.245 0 0 1-.39.653c-.173.207-.473.477-.899.809-.363.285-.606.521-.73.709-.123.187-.184.44-.184.756v.263H8.189zm-.24 1.87c0-.59.286-.885.86-.885.282 0 .497.077.645.231.149.155.223.372.223.654 0 .277-.075.497-.226.659-.15.162-.364.243-.641.243-.278 0-.49-.08-.64-.237-.148-.159-.222-.38-.222-.665z"></path>
+                      </g>
+                    </svg>
+        
+                  </div>
+                </li>
+                <li>
+                  <svg width="23" height="22" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#D8D8D8" fill-rule="evenodd">
+                      <path d="M21.293 1.298L11 11.591 8.707 9.298a.999.999 0 1 0-1.414 1.414l3 3a.997.997 0 0 0 1.414 0l11-11a.999.999 0 1 0-1.414-1.414"></path>
+                      <path d="M22 10.075v.93a10.925 10.925 0 0 1-3.227 7.777A10.926 10.926 0 0 1 11 22h-.007C4.929 21.996-.003 17.058 0 10.993a10.927 10.927 0 0 1 3.226-7.776A10.927 10.927 0 0 1 10.999 0h.008c1.551 0 3.055.32 4.47.952a1 1 0 1 1-.815 1.826A8.926 8.926 0 0 0 11.006 2H11a8.938 8.938 0 0 0-6.36 2.632A8.938 8.938 0 0 0 2 10.994c-.003 4.963 4.032 9.003 8.995 9.006H11c2.401 0 4.66-.935 6.36-2.633A8.936 8.936 0 0 0 20 11.005v-.93a1 1 0 1 1 2 0"></path>
+                    </g>
+                  </svg>
+                  Efficient resource utilization
+                  <div class="question-mark tooltip" data-tippy-content="How to schedule resource consumption across a heterogeneous fleet of servers and application types (containers, virtual machines, JAR files, etc.) to use all servers efficiently." tabindex="0">
+                    <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                      <title>Group 13</title>
+                      <g fill="#B4B8BC" fill-rule="evenodd" opacity=".7">
+                        <path d="M9 18A9 9 0 1 1 9 0a9 9 0 0 1 0 18zm0-1A8 8 0 1 0 9 1a8 8 0 0 0 0 16z"></path>
+                        <path d="M8.19 10.898v-.375c0-.43.078-.787.234-1.072.156-.285.43-.58.82-.885.465-.367.765-.652.9-.855a1.29 1.29 0 0 0 .202-.727c0-.328-.11-.58-.328-.755-.22-.176-.534-.264-.944-.264-.37 0-.715.053-1.031.158a7.32 7.32 0 0 0-.926.38l-.492-1.03a5.158 5.158 0 0 1 2.549-.662c.765 0 1.373.187 1.822.562.45.375.674.893.674 1.553 0 .293-.043.553-.129.782a2.245 2.245 0 0 1-.39.653c-.173.207-.473.477-.899.809-.363.285-.606.521-.73.709-.123.187-.184.44-.184.756v.263H8.189zm-.24 1.87c0-.59.286-.885.86-.885.282 0 .497.077.645.231.149.155.223.372.223.654 0 .277-.075.497-.226.659-.15.162-.364.243-.641.243-.278 0-.49-.08-.64-.237-.148-.159-.222-.38-.222-.665z"></path>
+                      </g>
+                    </svg>
+        
+                  </div>
+                </li>
+              </ul>
+              <a class="btn" href="/products/nomad/">Run with Nomad<span>›</span></a>
+            </li>
+            <li class="consul tab connect">
+              <div class="headline">Connect</div>
+              <h5>Connect applications across infrastructure</h5>
+              <p>A core requirement of the cloud model is a common backbone in the form of a dynamic registry that describes where services and infrastructure components are running and allows hardware failures to be masked and mitigated. It also enables elasticity, without hard-coding or having a large portion of the infrastructure tasked with load balancing. This common backbone needs to:</p>
+              <ul>
+                <li>
+                  <svg width="23" height="22" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#D8D8D8" fill-rule="evenodd">
+                      <path d="M21.293 1.298L11 11.591 8.707 9.298a.999.999 0 1 0-1.414 1.414l3 3a.997.997 0 0 0 1.414 0l11-11a.999.999 0 1 0-1.414-1.414"></path>
+                      <path d="M22 10.075v.93a10.925 10.925 0 0 1-3.227 7.777A10.926 10.926 0 0 1 11 22h-.007C4.929 21.996-.003 17.058 0 10.993a10.927 10.927 0 0 1 3.226-7.776A10.927 10.927 0 0 1 10.999 0h.008c1.551 0 3.055.32 4.47.952a1 1 0 1 1-.815 1.826A8.926 8.926 0 0 0 11.006 2H11a8.938 8.938 0 0 0-6.36 2.632A8.938 8.938 0 0 0 2 10.994c-.003 4.963 4.032 9.003 8.995 9.006H11c2.401 0 4.66-.935 6.36-2.633A8.936 8.936 0 0 0 20 11.005v-.93a1 1 0 1 1 2 0"></path>
+                    </g>
+                  </svg>
+                  Dynamically discover services
+                  <div class="question-mark tooltip" data-tippy-content="Developers need to discover and register application services required by their applications on the network." tabindex="0">
+                    <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                      <title>Group 13</title>
+                      <g fill="#B4B8BC" fill-rule="evenodd" opacity=".7">
+                        <path d="M9 18A9 9 0 1 1 9 0a9 9 0 0 1 0 18zm0-1A8 8 0 1 0 9 1a8 8 0 0 0 0 16z"></path>
+                        <path d="M8.19 10.898v-.375c0-.43.078-.787.234-1.072.156-.285.43-.58.82-.885.465-.367.765-.652.9-.855a1.29 1.29 0 0 0 .202-.727c0-.328-.11-.58-.328-.755-.22-.176-.534-.264-.944-.264-.37 0-.715.053-1.031.158a7.32 7.32 0 0 0-.926.38l-.492-1.03a5.158 5.158 0 0 1 2.549-.662c.765 0 1.373.187 1.822.562.45.375.674.893.674 1.553 0 .293-.043.553-.129.782a2.245 2.245 0 0 1-.39.653c-.173.207-.473.477-.899.809-.363.285-.606.521-.73.709-.123.187-.184.44-.184.756v.263H8.189zm-.24 1.87c0-.59.286-.885.86-.885.282 0 .497.077.645.231.149.155.223.372.223.654 0 .277-.075.497-.226.659-.15.162-.364.243-.641.243-.278 0-.49-.08-.64-.237-.148-.159-.222-.38-.222-.665z"></path>
+                      </g>
+                    </svg>
+        
+                  </div>
+                </li>
+                <li>
+                  <svg width="23" height="22" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#D8D8D8" fill-rule="evenodd">
+                      <path d="M21.293 1.298L11 11.591 8.707 9.298a.999.999 0 1 0-1.414 1.414l3 3a.997.997 0 0 0 1.414 0l11-11a.999.999 0 1 0-1.414-1.414"></path>
+                      <path d="M22 10.075v.93a10.925 10.925 0 0 1-3.227 7.777A10.926 10.926 0 0 1 11 22h-.007C4.929 21.996-.003 17.058 0 10.993a10.927 10.927 0 0 1 3.226-7.776A10.927 10.927 0 0 1 10.999 0h.008c1.551 0 3.055.32 4.47.952a1 1 0 1 1-.815 1.826A8.926 8.926 0 0 0 11.006 2H11a8.938 8.938 0 0 0-6.36 2.632A8.938 8.938 0 0 0 2 10.994c-.003 4.963 4.032 9.003 8.995 9.006H11c2.401 0 4.66-.935 6.36-2.633A8.936 8.936 0 0 0 20 11.005v-.93a1 1 0 1 1 2 0"></path>
+                    </g>
+                  </svg>
+                  Describe real-time configuration
+                  <div class="question-mark tooltip" data-tippy-content="Operators need the ability to discover and update infrastructure components -- for example, updating the settings on every load balancer on the network—to keep the infrastructure healthy." tabindex="0">
+                    <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                      <title>Group 13</title>
+                      <g fill="#B4B8BC" fill-rule="evenodd" opacity=".7">
+                        <path d="M9 18A9 9 0 1 1 9 0a9 9 0 0 1 0 18zm0-1A8 8 0 1 0 9 1a8 8 0 0 0 0 16z"></path>
+                        <path d="M8.19 10.898v-.375c0-.43.078-.787.234-1.072.156-.285.43-.58.82-.885.465-.367.765-.652.9-.855a1.29 1.29 0 0 0 .202-.727c0-.328-.11-.58-.328-.755-.22-.176-.534-.264-.944-.264-.37 0-.715.053-1.031.158a7.32 7.32 0 0 0-.926.38l-.492-1.03a5.158 5.158 0 0 1 2.549-.662c.765 0 1.373.187 1.822.562.45.375.674.893.674 1.553 0 .293-.043.553-.129.782a2.245 2.245 0 0 1-.39.653c-.173.207-.473.477-.899.809-.363.285-.606.521-.73.709-.123.187-.184.44-.184.756v.263H8.189zm-.24 1.87c0-.59.286-.885.86-.885.282 0 .497.077.645.231.149.155.223.372.223.654 0 .277-.075.497-.226.659-.15.162-.364.243-.641.243-.278 0-.49-.08-.64-.237-.148-.159-.222-.38-.222-.665z"></path>
+                      </g>
+                    </svg>
+        
+                  </div>
+                </li>
+              </ul>
+              <a class="btn" href="/products/consul/">Connect with Consul<span>›</span></a>
+            </li>
+          </div>
+        </div>
+        
+      </div>
+      
+      
+    </div>
+  </section>
+
+
+  <section id="testimonial-area">
+    <div class="container">
+      
+      <div class="row d-flex justify-content-center py-5 text-white">
+        <div class="col-8 text-center">
+          <h2>The world's leading organizations trust&nbsp;HashiCorp</h2>
+          <h3>HashiCorp provides many of the world's most innovative companies with the infrastructure automation capabilities they need as they move&nbsp;to&nbsp;cloud.</h3>
+        </div>
+      </div>
+      
+      <div class="row d-flex justify-content-center">
+        <div class="col-8">
+          <div id="carouselContent" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+      
+              <div class="carousel-item active text-center p-4">
+                <div class="row p-5 ">
+                  <div class="col-sm-12 col-md-4 text-center">
+                    <img src="https://www.datocms-assets.com/2885/1506527190-color.svg" alt="">
+                  </div>
+          
+                  <div class="col-sm-12 col-md-8 text-justify">
+                    <blockquote>
+                      The HashiCorp Product Suite provides us with modular solutions that are exceptional at what they
+                      do and will grow with us over the next decade, allowing us to provision any infrastructure for any
+                      of the applications we are developing."</p>
+                    </blockquote>
+                    <p><strong>Kieran Broadfoot</strong>, Hosting CTO</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="carousel-item text-center p-4">
+        
+                <div class="row p-5">
+                  <div class="col-sm-12 col-md-4 text-center">
+                    <img class="" src="https://www.datocms-assets.com/2885/1506527209-color.svg">
+                  </div>
+          
+                  <div class="col-sm-12 col-md-8 text-justify">
+                    <blockquote>
+                      <p>"We are excited to see our deep technical partnership with HashiCorp helping to propel our DevOps
+                        practices forward at a significant pace. Moreover, we value acting as a customer advisor and
+                        contributing back to the community."</p>
+                    </blockquote>
+                    <p><strong>Kieran Broadfoot</strong>, Hosting CTO</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="carousel-item text-center p-4">
+        
+                <div class="row p-5">
+                  <div class="col-sm-12 col-md-4 text-center">
+                    <img class="" src="https://www.datocms-assets.com/2885/1506527311-color.svg" alt="Barclays logo"">
+                  </div>
+          
+                  <div class="col-sm-12 col-md-8 text-justify">
+                    <blockquote>
+                      <p>"Terraform enabled us to quickly boot new services and resources in a matter of minutes, a task
+                        that previously would have taken days."</p>
+                    </blockquote>
+                    <p><strong>Calvin French-Owen</strong>, Co-founder</p>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+            <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+  </section>
+  
+  
+  <section id="our-partners">
+    <div class="container">
+      <div class="row align-items-center pb-5">
+        <div class="col"><img class="" src="https://www.datocms-assets.com/2885/1524097109-adobe-2-1.svg"
+            alt="Adobe Logo" style="width:45%"></div>
+        <div class="col"><img class="" src="https://www.datocms-assets.com/2885/1506527311-color.svg"
+            alt="Barclays Logo" style="width:75%"></div>
+        <div class="col"><img class="" src="https://www.datocms-assets.com/2885/1506537010-color.svg" alt="Citadel Logo"
+            style="width:75%"></div>
+        <div class="col"><img class="" src="https://www.datocms-assets.com/2885/1515179776-ripple_logo.svg"
+            alt="Ripple Logo" style="width:75%"></div>
+        <div class="col"><img class="" src="https://www.datocms-assets.com/2885/1506527190-color.svg"
+            alt="SAP Ariba Logo" style="width:75%"></div>
+        <div class="col"><img class="" src="https://www.datocms-assets.com/2885/1523044072-pandora-color.svg"
+            alt="Pandora Logo" style="width:75%"></div>
+      </div>
+      <div class="row align-items-center py-5">
+        <div class="col"><img class="" src="https://www.datocms-assets.com/2885/1507305078-color.svg"
+            alt="Pinterest Logo" style="width:75%"></div>
+        <div class="col"><img class="" src="https://www.datocms-assets.com/2885/1506527209-color.svg" alt="Segment Logo"
+            style="width:75%"></div>
+        <div class="col"><img class="" src="https://www.datocms-assets.com/2885/1506537044-color.svg"
+            alt="Spaceflight Logo" style="width:75%"></div>
+        <div class="col">
+          <picture>
+            <source type="image/webp"
+              srcset="https://www.datocms-assets.com/2885/1533151962-cruisewordmark.png?fit=max&amp;fm=webp&amp;q=80&amp;w=250 250w,https://www.datocms-assets.com/2885/1533151962-cruisewordmark.png?fit=max&amp;fm=webp&amp;q=80&amp;w=500 500w,https://www.datocms-assets.com/2885/1533151962-cruisewordmark.png?fit=max&amp;fm=webp&amp;q=80&amp;w=750 750w,https://www.datocms-assets.com/2885/1533151962-cruisewordmark.png?fit=max&amp;fm=webp&amp;q=80&amp;w=1000 1000w,https://www.datocms-assets.com/2885/1533151962-cruisewordmark.png?fit=max&amp;fm=webp&amp;q=80&amp;w=1500 1500w,https://www.datocms-assets.com/2885/1533151962-cruisewordmark.png?fit=max&amp;fm=webp&amp;q=80&amp;w=2000 2000w,https://www.datocms-assets.com/2885/1533151962-cruisewordmark.png?fit=max&amp;fm=webp&amp;q=80&amp;w=2500 2500w"
+              sizes="100vw"><img class=""
+              src="https://www.datocms-assets.com/2885/1533151962-cruisewordmark.png?fit=max&amp;fm=png&amp;q=80"
+              srcset="https://www.datocms-assets.com/2885/1533151962-cruisewordmark.png?fit=max&amp;fm=png&amp;q=80&amp;w=250 250w,https://www.datocms-assets.com/2885/1533151962-cruisewordmark.png?fit=max&amp;fm=png&amp;q=80&amp;w=500 500w,https://www.datocms-assets.com/2885/1533151962-cruisewordmark.png?fit=max&amp;fm=png&amp;q=80&amp;w=750 750w,https://www.datocms-assets.com/2885/1533151962-cruisewordmark.png?fit=max&amp;fm=png&amp;q=80&amp;w=1000 1000w,https://www.datocms-assets.com/2885/1533151962-cruisewordmark.png?fit=max&amp;fm=png&amp;q=80&amp;w=1500 1500w,https://www.datocms-assets.com/2885/1533151962-cruisewordmark.png?fit=max&amp;fm=png&amp;q=80&amp;w=2000 2000w,https://www.datocms-assets.com/2885/1533151962-cruisewordmark.png?fit=max&amp;fm=png&amp;q=80&amp;w=2500 2500w"
+              sizes="100vw" alt="GM Cruise Logo" style="width:75%">
+          </picture>
+        </div>
+        <div class="col"><img class="" src="https://www.datocms-assets.com/2885/1539816815-hulu-interactive-rgb.svg"
+            alt="Hulu Logo" style="width:75%"></div>
+        <div class="col"><img class="" src="https://www.datocms-assets.com/2885/1545338604-progressive.svg"
+            alt="Progressive Logo" style="width:75%"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="infrastructure">
+    <div class="container py-5 my-5">
+      <div class="row ">
+        <div class="col-5">
+          <div class="left">
+            <h2>Run the infrastructure of your choice</h2>
+            <p>Our strategic Technology Partners are fundamental technology providers who support and deeply integrate
+              their solutions with the HashiCorp tool chain.</p>
+            <p><a href="#">Explore Our Partners <span>›</span></a></p>
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="row pl-5 infrastructure-logo ">
+            <div class="col logo "><a href="#">
+              <img class="" src="https://www.datocms-assets.com/2885/1510033547-aws_logo_rgb_wht.svg" alt="AWS Logo"></a></div>
+            <div class="col logo mx-5"><a href="#">
+              <img class="" src="https://www.datocms-assets.com/2885/1507313154-white.svg" alt="Google Cloud  Logo"></a></div>
+            <div class="col logo"><a href="#">
+              <img class="" src="https://www.datocms-assets.com/2885/1507313171-white.svg" alt="Alibaba Cloud Logo"></a></div>
+          </div>
+
+          <div class="row pl-5 infrastructure-logo ">
+            <div class="col logo">
+              <a href="">
+                <img class="" src="https://www.datocms-assets.com/2885/1539799220-azure-stacked-white.svg" alt="Microsoft Azure Logo">
+              </a>
+            </div>
+            <div class="col logo mx-5">
+              <a href="">
+              <img class="" src="https://www.datocms-assets.com/2885/1507313206-white.svg" alt="Oracle Logo">
+              </a>
+            </div>
+            <div class="col logo"><a href="">
+              <img class="" src="https://www.datocms-assets.com/2885/1507313227-white.svg" alt="VMware Logo"></a></div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="product-suite">
+    <div class="container">
+      <div class="row d-flex justify-content-center py-5 text-white">
+        <div class="col-8 text-center">
+          <h2>HashiCorp Product&nbsp;Suite</h2>
+          <h3 class="my-4">Each product addresses a focused concern for the technical and organizational challenges of infrastructure
+            automation.
+            This means products can be adopted one at a time or all together. We do this by enabling consistent
+            workflows—not technologies.
+            This enables customers to follow the same approach across their private data centers and their cloud
+            environments.</h3>
+        </div>
+      </div>
+
+      <div class="row product-option pt-4">
+
+        <div class="col product-provision">
+          <div class="product-title">Provision</div>
+          <img src="https://www.datocms-assets.com/2885/1507928756-terraform.svg" class="terraform logo"
+            alt="terraform logo">
+          <h4>Terraform</h4>
+          <p>Create, combine, and manage infrastructure across multiple providers.</p>
+          <a href="#">Learn More <span>›</span></a>
+        </div>
+
+        <div class="col product-secure">
+          <div class="product-title">Secure</div>
+          <img src="https://www.datocms-assets.com/2885/1507928972-vault.svg" class="vault logo" alt="vault logo">
+          <h4>Vault</h4>
+          <p>Centrally store, secure, and control access to distributed secrets.</p>
+          <a href="#">Learn More <span>›</span></a>
+        </div>
+
+        <div class="col product-connect">
+          <div class="product-title">Connect</div>
+          <img src="https://www.datocms-assets.com/2885/1507928925-consul.svg" class="consul logo" alt="consul logo">
+          <h4>Consul</h4>
+          <p>Distributed, highly available tool for service discovery, configuration, and orchestration.</p>
+          <a href="#">Learn More <span>›</span></a>
+        </div>
+
+        <div class="col product-run">
+          <div class="product-title">Run</div>
+          <img src="https://www.datocms-assets.com/2885/1509989810-nomad.svg" class="nomad logo" alt="nomad logo">
+          <h4>Nomad</h4>
+          <p>Cluster manager and scheduler to deploy applications across any infrastructure.</p>
+          <a href="#">Learn More <span>›</span></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="get-started">
+    <div class="container">
+      <div class="row d-flex justify-content-center py-5 text-white">
+        <div class="col-8 text-center">
+          <h1>Ready to Get&nbsp;Started?</h1>
+          <h3>Request a demo or talk to our technical sales team to answer your questions and
+            explore&nbsp;your&nbsp;needs.</h3>
+
+          <div class="buttons">
+            <a class="btn" href="#">Request a Demo</a>
+            <a class="btn light-outline" href="#">Talk to Sales</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <section class="newsletter" id="subscribe-footer">
+      <div class="container" id="subscribe">
+        <div class="row py-5">
+          <div class="col-sm-6">
+            <div class="content">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Email address">
+                <span class="input-group-btn">
+                  <button class="btn" type="submit">Subscribe to Newsletter</button>
+                </span>
+              </div>
+            </div>
+
+            <div class="i-agree">
+              <label class="checkbox-label">I agree to HashiCorp’s <a href="#" target="_blank">Privacy Policy</a>
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+              
+            </div>
+
+          </div>
+
+          <div class="col-sm-6 d-flex justify-content-end">
+
+            <ul class="nav">
+              <li class="nav-item">
+                <a data-ga-footer="Social | Github" href="https://github.com/hashicorp" target="_blank"
+                  rel="noopener noreferrer" title="Github">
+                  <img src="https://www.datocms-assets.com/2885/1506710652-github.svg" alt="Github Icon">
+                </a>
+              </li>
+              <li class="nav-item mx-4">
+                <a data-ga-footer="Social | Twitter" href="https://twitter.com/hashicorp" target="_blank"
+                  rel="noopener noreferrer" title="Twitter">
+                  <img src="https://www.datocms-assets.com/2885/1506710661-twitter.svg" alt="Twitter Icon">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a data-ga-footer="Social | YouTube" href="https://www.youtube.com/HashiCorp" target="_blank"
+                  rel="noopener noreferrer" title="YouTube">
+                  <img src="https://www.datocms-assets.com/2885/1507937182-youtube.svg" alt="Youtube Icon">
+                </a>
+              </li>
+              <li class="nav-item mx-4">
+                <a data-ga-footer="Social | LinkedIn" href="https://www.linkedin.com/company/hashicorp" target="_blank"
+                  rel="noopener noreferrer" title="LinkedIn">
+                  <img src="https://www.datocms-assets.com/2885/1506710672-linkedin.svg" alt="LinkedIn Icon">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a data-ga-footer="Social | Facebook" href="https://www.facebook.com/HashiCorp/" target="_blank"
+                  rel="noopener noreferrer" title="Facebook">
+                  <img src="https://www.datocms-assets.com/2885/1508538285-facebook_social.svg" alt="Facebook Icon">
+                </a>
+              </li>
+              <li class="nav-item ml-4">
+                <a data-ga-footer="Social | Meetup" href="https://www.meetup.com/pro/hugs" target="_blank"
+                  rel="noopener noreferrer" title="Meetup">
+                  <img src="https://www.datocms-assets.com/2885/1507937166-meetup.svg" alt="Meetup Icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row py-5" id="product-list">
+          <div class="col-4"><img src="https://www.datocms-assets.com/2885/1502825447-hashicorp-logo.svg"
+              alt="Hashicorp Logo"></div>
+          <div class="col-8 product-item">
+            <div class="row">
+              <div class="col products">
+                <p>Products</p>
+                <ul>
+                  <li><a data-ga-footer="Products | Terraform"
+                      href="https://www.hashicorp.com/products/terraform">Terraform</a></li>
+                  <li><a data-ga-footer="Products | Vault" href="https://www.hashicorp.com/products/vault">Vault</a>
+                  </li>
+                  <li><a data-ga-footer="Products | Consul" href="https://www.hashicorp.com/products/consul">Consul</a>
+                  </li>
+                  <li><a data-ga-footer="Products | Nomad" href="https://www.hashicorp.com/products/nomad">Nomad</a>
+                  </li>
+                  <li><a data-ga-footer="Products | Vagrant" href="https://vagrantup.com">Vagrant</a></li>
+                  <li><a data-ga-footer="Products | Packer" href="https://www.packer.io">Packer</a></li>
+                  <li><a data-ga-footer="Products | Sentinel (Policy as Code)"
+                      href="https://www.hashicorp.com/sentinel">Sentinel (Policy as Code)</a></li>
+                </ul>
+              </div>
+
+              <div class="col resources">
+                <p>Resources</p>
+                <ul>
+                  <li><a data-ga-footer="Resources | Library" href="https://www.hashicorp.com/resources">Library</a>
+                  </li>
+                  <li><a data-ga-footer="Resources | Blog" href="https://www.hashicorp.com/blog">Blog</a></li>
+                  <li><a data-ga-footer="Resources | Learn" href="https://learn.hashicorp.com/">Learn</a></li>
+                  <li><a data-ga-footer="Resources | Training" href="https://www.hashicorp.com/training">Training</a>
+                  </li>
+                  <li><a data-ga-footer="Resources | Cloud Operating Model"
+                      href="https://www.hashicorp.com/cloud-operatinmodel">Cloud Operating Model</a></li>
+                  <li><a data-ga-footer="Resources | DevOps Defined"
+                      href="https://www.hashicorp.com/devops-defined">DevOps Defined</a></li>
+                </ul>
+              </div>
+
+              <div class="col partners">
+                <p>Partners</p>
+                <ul>
+                  <li><a data-ga-footer="Partners | Partner Network" href="https://www.hashicorp.com/partners">Partner
+                      Network</a></li>
+                  <li><a data-ga-footer="Partners | Become a Partner"
+                      href="https://www.hashicorp.com/partners/become-a-partner">Become a Partner</a></li>
+                  <li><a data-ga-footer="Partners | Partner Portal" href="https://partner.hashicorp.com/">Partner
+                      Portal</a></li>
+                </ul>
+              </div>
+
+              <div class="col company">
+                <p>Company</p>
+                <ul>
+                  <li><a data-ga-footer="Company | About Us" href="https://www.hashicorp.com/about">About Us</a></li>
+                  <li><a data-ga-footer="Company | Jobs (we're hiring!)" href="https://www.hashicorp.com/jobs">Jobs
+                      (we're hiring!)</a></li>
+                  <li><a data-ga-footer="Company | Events" href="https://www.hashicorp.com/events">Events</a></li>
+                  <li><a data-ga-footer="Company | Press" href="https://www.hashicorp.com/press">Press</a></li>
+                  <li><a data-ga-footer="Company | Support" href="https://support.hashicorp.com/hc/en-us" rel="noopener"
+                      target="_blank">Support</a></li>
+                  <li><a data-ga-footer="Company | Brand" href="https://www.hashicorp.com/brand">Brand</a></li>
+                  <li><a data-ga-footer="Company | Contact" href="https://www.hashicorp.com/contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row copyright pt-5">
+          <div class="col-3">
+            <p>Copyright © 2019 HashiCorp</p>
+          </div>
+
+          <div class="col-9 d-flex justify-content-end">
+            <ul class="copyright-links list-inline text-right">
+              <li class="list-inline-item"><a data-ga-footer="Bottom | Consent Manager"
+                  href="https://www.hashicorp.com/terms-of-service">Consent Manager</a></li>
+              <li class="list-inline-item"><a data-ga-footer="Bottom | Terms of Service"
+                  href="https://www.hashicorp.com/terms-of-service">Terms of Service</a></li>
+              <li class="list-inline-item"><a data-ga-footer="Bottom | Security"
+                  href="https://www.hashicorp.com/security">Security</a></li>
+              <li class="list-inline-item"><a data-ga-footer="Bottom | Privacy"
+                  href="https://www.hashicorp.com/privacy">Privacy</a></li>
+              <li class="list-inline-item"><a data-ga-footer="Bottom | Community Guidelines"
+                  href="https://www.hashicorp.com/community-guidelines">Community Guidelines</a></li>
+              <li class="list-inline-item"><a data-ga-footer="Bottom | Status" href="https://status.hashicorp.com/"
+                  rel="noopener" target="_blank">Status</a></li>
+              <li class="list-inline-item"><a data-ga-footer="Bottom | Login" href="https://app.terraform.io/">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </footer>
+
+
+
+
+  <script>
+    $(document).ready(function () {
+      // executes when HTML-Document is loaded and DOM is ready
+
+      // breakpoint and up
+      $(window).resize(function () {
+        if ($(window).width() >= 980) {
+
+          // when you hover a toggle show its dropdown menu
+          $(".navbar .dropdown-toggle").hover(function () {
+            $(this).parent().toggleClass("show");
+            $(this).parent().find(".dropdown-menu").toggleClass("show");
+          });
+
+          // hide the menu when the mouse leaves the dropdown
+          $(".navbar .dropdown-menu").mouseleave(function () {
+            $(this).removeClass("show");
+          });
+
+          // do something here
+        }
+      });
+
+      // document ready
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
